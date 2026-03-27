@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main() {
+    int idades[] = {15, 22, 33, 40, 19, 57};
+    int total = 6;
+
+    printf("Idades impares: ");
+    for (int x = 0; x < total; x++) {
+        if (idades[x] % 2 != 0) {
+            printf("%d ", idades[x]);
+        }
+    }
+
+    return 0;
+}
