@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    int precos[] = {2, 4, 5, 8};
+    int alvo = 10;
+    int tamanho = 4; // Quantidade de itens no carrinho
+
+    // O primeiro loop escolhe um número
+    for (int i = 0; i < tamanho; i++) {
+        
+        // O segundo loop testa com os números da frente
+        for (int j = i + 1; j < tamanho; j++) {
+            
+            if (precos[i] + precos[j] == alvo) {
+                printf("Encontrei! Indices: [%d, %d]\n", i, j);
+                printf("Porque %d + %d = %d\n", precos[i], precos[j], alvo);
+                return 0; // Para o programa assim que achar
+            }
+        }
+    }
+
+    printf("Nenhum par encontrado.");
+    return 0;
+}
