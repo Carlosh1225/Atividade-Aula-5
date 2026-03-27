@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main() {
+    char nome1[] = "Carlos";
+    char nome2[] = "Mariana";
+
+    int notas_carlos[] = {82, 90, 75};
+    int notas_mariana[] = {85, 88, 75};
+
+    int pontos_carlos = 0;
+    int pontos_mariana = 0;
+
+    for (int i = 0; i < 3; i++) {
+        if (notas_carlos[i] > notas_mariana[i]) {
+            pontos_carlos++;
+        } 
+        else if (notas_mariana[i] > notas_carlos[i]) {
+            pontos_mariana++;
+        }
+    }
+
+    printf("Resultado Final:\n");
+    printf("%s: %d pontos\n", nome1, pontos_carlos);
+    printf("%s: %d pontos\n", nome2, pontos_mariana);
+
+    return 0;
+}
