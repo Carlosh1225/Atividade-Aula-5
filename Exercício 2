@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 // Função que processa o pico de audiência
 int calcular_pico_audiencia(int *dados, int n) {
     int recorde = 0;
