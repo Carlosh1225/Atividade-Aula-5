@@ -1,1 +1,27 @@
 
+#include <stdio.h>
+int main() {
+    char func1[] = "Fernando";
+    char func2[] = "Isabela";
+
+    int notas_f[] = {9, 6, 8};
+    int notas_i[] = {7, 8, 8};
+
+    int pontos_f = 0;
+    int pontos_i = 0;
+
+    for (int k = 0; k < 3; k++) {
+        if (notas_f[k] > notas_i[k]) {
+            pontos_f++;
+        } 
+        else if (notas_i[k] > notas_f[k]) {
+            pontos_i++;
+        }
+    }
+
+    printf("Avaliacao Concluida:\n");
+    printf("%s acumulou %d pontos\n", func1, pontos_f);
+    printf("%s acumulou %d pontos\n", func2, pontos_i);
+
+    return 0;
+}
