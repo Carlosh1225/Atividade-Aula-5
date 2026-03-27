@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main() {
+    // Parte A: Numeros acima de 5
+    int valores[] = {2, 8, 4, 12, 1, 7};
+    printf("Acima de 5: ");
+    for (int j = 0; j < 6; j++) {
+        if (valores[j] > 5) {
+            printf("%d ", valores[j]);
+        }
+    }
+
+    // Parte B: Sobrenome com letras alternadas
+    char sobrenome[] = "oliveira"; 
+    printf("\nAlternadas: ");
+    for (int k = 0; sobrenome[k] != '\0'; k += 2) {
+        printf("%c", sobrenome[k]);
+    }
+
+    return 0;
+}
