@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main() {
+    // Vetor com os primeiros numeros primos
+    int primos[] = {2, 3, 5, 7, 11, 13, 17};
+    int total = 7;
+
+    // O laco comeca no ultimo indice (total - 1) e vai ate o zero
+    for (int k = total - 1; k >= 0; k--) {
+        printf("%d ", primos[k]);
+    }
+
+    return 0;
+}
